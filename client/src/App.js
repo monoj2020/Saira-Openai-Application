@@ -24,7 +24,7 @@ function App() {
   const [chatLog, setChatLog] = useState([
     {
       user: "me",
-      message: "I want to use ChatGPT today"
+      message: "I want to use devil today"
     }, {
       user: "gpt",
       message: "How can I help you today"
@@ -117,7 +117,7 @@ function App() {
 
 
       <section className="chatbox">
-        <h1>Welcome to Saira OpenAI</h1>
+        <h1>Welcome to devil ai</h1>
         <p ><span class="text-gradient">Saira OpenAI </span> is an artificial intelligence research laboratory consisting of the for-profit corporation OpenAI LP and its parent company, the non-profit OpenAI Inc. The company conducts research in the field of AI with the stated goal of promoting and developing friendly AI in a way that benefits humanity as a whole. </p>
         <div className='infoview'>
           <div className='infoview1'><CiLight className="icons-react" /><h2>Examples</h2><ul><li>"Explain quantum computing in simple terms"</li></ul></div>
@@ -146,9 +146,9 @@ function App() {
 
 const ChatMessage = ({ message }) => {
   return (
-    <div className={`chat-message ${message.user === "gpt" && "chatgpt"}`}>
+    <div className={`chat-message ${message.user === "dk" && "devil"}`}>
       <div className="chat-message-center">
-        <div className={`avater ${message.user === "gpt" && "chatgpt"}`}>{message.user === "gpt" && <FaRobot />} {message.user === "me" && <HiUserCircle />}</div>
+        <div className={`avater ${message.user === "dk" && "devil"}`}>{message.user === "gpt" && <FaRobot />} {message.user === "me" && <HiUserCircle />}</div>
         <div className="message">{message.message}
         </div>
       </div>
